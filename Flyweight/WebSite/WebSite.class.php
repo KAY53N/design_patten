@@ -1,4 +1,4 @@
 <?php
 abstract class WebSite {
-	abstract function webuse();
+	abstract function webuse(User $user);
 }

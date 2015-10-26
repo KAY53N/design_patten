@@ -13,13 +13,13 @@ require_once dirname(__FILE__) . '/../../Loader.php';
 $f = new WebSiteFactory();
 
 $fx = $f->getWebSiteCategory('产品展示');
-$fx->webuse();
+$fx->webuse(new User('徐建涛'));
 
 $fx = $f->getWebSiteCategory('产品展示');
-$fx->webuse();
+$fx->webuse(new User('小菜'));
 
 $fx = $f->getWebSiteCategory('博客');
-$fx->webuse();
+$fx->webuse(new User('Kaysen'));
 
 echo $f->getWebSiteCount();
 

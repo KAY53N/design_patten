@@ -7,8 +7,8 @@ class ConcreteWebSite extends WebSite {
 		$this->name = $name;
 	}
 
-	public function webuse()
+	public function webuse(User $user)
 	{
-		echo sprintf('网站分类：%s <br />', $this->name);
+		echo sprintf('网站分类：%s 用户：%s <br />', $this->name, $user->getName());
 	}
 }
