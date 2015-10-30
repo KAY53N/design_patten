@@ -1,4 +1,5 @@
 <?php
+header('Content-Type:text/html;charset=utf-8');
 /*
  * 简单工厂设计模式【用户】
  * Author: Kaysen
