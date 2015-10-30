@@ -10,9 +10,27 @@ function __autoload($class)
 	{
     	throw new Exception('Directory argument must be a string or an array');
 	}
-
-    // autodiscover the path from the class name
+	
+	
+	// autodiscover the path from the class name
 	$file = ROOT_PATH.DIRECTORY_SEPARATOR.str_replace('_', DIRECTORY_SEPARATOR, $class) . '.class.php';
 	
-	include $file;
+
+	if(defined('__AUTOLOAD_DIR__'))
+	{
+		$dirList = explode('; ', __AUTOLOAD_DIR__);
+		foreach($dirList as $k=>$v)
+		{
+			$dirFile = ROOT_PATH . DIRECTORY_SEPARATOR . $v. $class . '.class.php';
+			if(file_exists($dirFile))
+			{
+				include_once ROOT_PATH . DIRECTORY_SEPARATOR . $v. $class . '.class.php';
+			}
+		}
+	}
+	
+	if(file_exists($file))
+	{
+		include $file;
+	}
 }
