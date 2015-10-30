@@ -1,1 +1,2 @@
-# design_patten
+# PHP 设计模式示例
+
