@@ -17,7 +17,7 @@
   * 享元模式 `Flyweight` ✓
 
 ### 行为型模式
-  * 观察者模式 `Observer`
+  * 观察者模式 `Observer` ✓
   * 责任链模式 `Chain of Responsibility`
   * 命令模式 `Command`
   * 解释器模式 `Interpreter` ✓
