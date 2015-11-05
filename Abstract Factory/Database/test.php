@@ -11,7 +11,7 @@ $dirList .= 'Department'.DIRECTORY_SEPARATOR;
 define('__AUTOLOAD_DIR__', $dirList);
 define('ROOT_PATH', dirname(__FILE__));
 
-require_once dirname(__FILE__) . '/../../Loader.php';
+require_once ROOT_PATH . '/../../Loader.php';
 
 $user = new User();
 $dept = new Department();

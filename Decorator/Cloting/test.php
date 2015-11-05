@@ -5,7 +5,7 @@ header('Content-Type:text/html;charset=utf-8');
  * Author: Kaysen
  */
 define('ROOT_PATH', dirname(__FILE__));
-require_once dirname(__FILE__) . '/../../Loader.php';
+require_once ROOT_PATH . '/../../Loader.php';
 
 $xiaocai = new Person('小菜');
 echo '第一种装扮<br>';

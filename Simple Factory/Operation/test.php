@@ -1,6 +1,6 @@
 <?php
 define('ROOT_PATH', dirname(__FILE__));
-require_once dirname(__FILE__) . '/../../Loader.php';
+require_once ROOT_PATH . '/../../Loader.php';
 
 $opra = OperationFactory::createOperation('+');
 $opra->setNumberA(11);
