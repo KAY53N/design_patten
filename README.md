@@ -23,8 +23,8 @@
   * 解释器模式 `Interpreter` ✓
   * 迭代器模式 `Iterator` ✓
   * 中介者模式 `Mediator` ✓
-  * 备忘录模式 `Memento`
-  * 状态模式 `State`
+  * 备忘录模式 `Memento` ✓
+  * 状态模式 `State` ✓
   * 策略模式 `Strategy` ✓
-  * 模板方法模式 `Template Method`
+  * 模板方法模式 `Template Method` ✓
   * 访问者模式 `Visitor` ✓
