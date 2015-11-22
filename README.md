@@ -1,4 +1,4 @@
-# PHP 设计模式示例
+# PHP 设计模式练习
 ### 创建型模式
 - [x] 简单工厂模式 `Simple Factory`
 - [x] 工厂方法模式 `Factory Method` 
